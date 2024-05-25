@@ -1,0 +1,113 @@
+/* app.css */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 50px auto 0; /* Adjust top margin to 50px, remove bottom margin */
+  padding: 30px 0; /* Padding only from the top */
+  padding-bottom: 0;
+  padding-bottom: 5px;
+  background-color: #333;
+  border-radius: 20px; /* Rounded corners for the calculator */
+  color: white;
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+  max-width: 850px; /* Limit the maximum width of the calculator */
+}
+
+.display {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: calc(100% - 20px); /* Adjusted width to accommodate padding */
+  font-size: 2em;
+  margin-bottom: 10px;
+  padding-right: 10px;
+  position: relative; /* Position relative for absolute positioning of Mac buttons */
+}
+
+.mac-buttons {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.mac-button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%; /* Make buttons round */
+  border: none;
+  margin-top: -25px;
+  cursor: pointer;
+}
+
+.mac-button.red {
+  background-color: red;
+}
+
+.mac-button.yellow {
+  background-color: yellow;
+}
+
+.mac-button.green {
+  background-color: green;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+  border-radius: 20px; /* Rounded corners for the buttons container */
+  overflow: hidden; /* Ensure buttons do not overflow the container */
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.button {
+  width: 80px; /* Adjust width as needed */
+  height: 80px; /* Adjust height as needed */
+  padding: auto;
+  font-size: 1.2em;
+  text-align: center;
+  background-color: #555;
+  border: none;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #777;
+}
+
+.button.orange {
+  background-color: #ff9500;
+}
+
+.button.dark {
+  background-color: #333;
+}
+
+.button.dark:hover {
+  background-color: #555;
+}
+
+.button.light {
+  background-color: #a6a6a6;
+  color: black;
+}
+
+.button.light:hover {
+  background-color: #c6c6c6;
+}
